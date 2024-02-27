@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3</title>
+    <style>
+        /* CSS TABEL MERGE CELLS*/
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .kepala {
+            background-color: yellow;
+            height: 30px;
+        }
+
+        .nilai {
+            text-align: center;
+        }
+
+        .kelas {
+            text-align: center;
+            background-color: rgb(143, 255, 143);
+        }
+
+        .nama {
+            padding-left: 10px;
+        }
+
+        /* CSS FORM CHECKBOX DAN RADIO BUTTON */
+        fieldset {
+            width: 30%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- MEMBUAT TABEL DENGAN MARGE CELLS -->
+    <h1>Table Marge Cells</h1>
+    <table style="width: 30%">
+        <tr class="kepala">
+            <th rowspan="2">NAMA</th>
+            <th rowspan="2">KELAS</th>
+            <th colspan="2">NILAI</th>
+        </tr>
+        <tr class="kepala">
+            <th>TUGAS 1</th>
+            <th>TUGAS 2</th>
+        </tr>
+        <tr>
+            <td class="nama">Nabila Azzahra</td>
+            <td rowspan="5" class="kelas">MI23B</td>
+            <td class="nilai">80</td>
+            <td class="nilai">90</td>
+        </tr>
+        <tr>
+            <td class="nama">Asep Manarul Hidayah</td>
+            <td class="nilai">75</td>
+            <td class="nilai">80</td>
+        </tr>
+        <tr>
+            <td class="nama">Sopyan Sauri</td>
+            <td class="nilai">60</td>
+            <td class="nilai">70</td>
+        </tr>
+        <tr>
+            <td class="nama">Diki Nur Rahman</td>
+            <td class="nilai">85</td>
+            <td class="nilai">95</td>
+        </tr>
+        <tr>
+            <td class="nama">Lerian Febriana</td>
+            <td class="nilai">70</td>
+            <td class="nilai">80</td>
+        </tr>
+    </table>
+
+    <!-- MEMBUAT FORM DENGAN RADIO BUTTON DAN CHECKBOX -->
+    <h1>From Radio Button dan Checkbox</h1>
+    <fieldset>
+        <legend>Form Coba</legend>
+        <form action="#">
+            <pre>
+Nama            : <input type="text" name="nama" placeholder="Masukkan nama di sini ......" required><br>
+Tempat lahir    : <input type="text" name="tempat_lahir" placeholder="Masukkan tempat lahir di sini ......" required><br>
+Tanggal lahir   : <input type="date" name="tanggal_lahir" required><br>
+Jenis kelamin   : <input type="radio" name="jenis_kelamin" value="Perempuan" required>Perempuan 
+                  <input type="radio" name="jenis_kelamin" value="Laki-laki" required>Laki-laki<br>
+Hobby           : <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><label for="vehicle3"> Program</label>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><label for="vehicle3"> design</label>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><label for="vehicle3"> Game</label><br>
+Alamat          : <textarea required></textarea><br>
+New Password    : <input type="password" name="password" placeholder="Masukkan password di sini ......" required><br>
+Email           : <input type="email" name="email" placeholder="Masukkan email di sini ......" required><br>
+            </pre>
+            <input type="submit" value="Save"> <input type="reset" value="cancel">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
